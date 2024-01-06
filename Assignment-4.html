@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Reset some default styles for consistency */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Global styling for the body */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 1rem 2rem;
+      }
+
+      /* Shared styles for image containers */
+      figure {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+
+      .image-container {
+        border: 2px solid black;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        /* object-fit: cover; */
+      }
+
+      figcaption {
+        text-align: left;
+        padding: 10px;
+        color: #555;
+        font-style: italic;
+      }
+
+      /* Image 1 specific styles */
+      .image1 {
+        background-image: url("Assignment4.PNG")  no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Image 2 specific styles */
+      .image2 {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .image2 div {
+        background-image: url("Assignment4.PNG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Image 3 specific styles */
+      .image3 {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .image3 img {
+        width: 500px;
+        height: 300px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Image 1 Section -->
+    <figure class="image-container image1">
+      <figcaption>Image 1</figcaption>
+      <img src="Assignment4.PNG" alt="Image 1" />
+    </figure>
+
+    <!-- Image 2 Section -->
+    <figure class="image-container image2">
+      <figcaption>Image 2</figcaption>
+      <div></div>
+    </figure>
+
+    <!-- Image 3 Section -->
+    <figcaption>Image 3</figcaption>
+    <figure class="image3">
+      <img src="Assignment4.PNG" alt="Image 3" />
+    </figure>
+  </body>
+</html>
